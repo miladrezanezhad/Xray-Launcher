@@ -3,13 +3,13 @@
 🎯 A lightweight Windows GUI launcher for [Xray-core](https://github.com/XTLS/Xray-core), designed for simplicity, autonomy, and full system integration — no external scripts, no dependencies.
 
 🎯 یک لانچر سبک برای ویندوز جهت اجرای [Xray-core](https://github.com/XTLS/Xray-core)، طراحی شده برای سادگی، استقلال کامل و یکپارچگی با سیستم — بدون اسکریپت‌های خارجی و بدون وابستگی.
-🎯 لانچر از اخرین نسخه  [Xray-core](https://github.com/XTLS/Xray-core) پشتیبانی میکنه 
 
 ---
 
 ## ✨ Features | ویژگی‌ها
 
-- ✅ Embedded Xray-core ZIP inside the app (no need to install separately)  
+- ✅ Embedded **Xray-core v25.12.8** inside the app  
+- ✅ Built on **.NET Framework 4.8**  
 - ✅ Config list management with persistent storage (`configs.txt`)  
 - ✅ One-click proxy activation/deactivation via Windows registry  
 - ✅ System tray icon with quick actions  
@@ -17,7 +17,8 @@
 - ✅ Displays public IP, connection status, and simulated speed  
 - ✅ Cleans up temporary files and restores internet on exit  
 
-- ✅ هسته‌ی Xray-core به صورت ZIP داخل نرم‌افزار قرار داده شده (نیازی به نصب جداگانه نیست)  
+- ✅ هسته‌ی **Xray-core v25.12.8** به صورت ZIP داخل نرم‌افزار قرار داده شده  
+- ✅ ساخته‌شده بر پایه‌ی **.NET Framework 4.8**  
 - ✅ مدیریت لیست کانفیگ‌ها با ذخیره‌سازی دائمی (`configs.txt`)  
 - ✅ فعال‌سازی/غیرفعال‌سازی پروکسی تنها با یک کلیک از طریق رجیستری ویندوز  
 - ✅ آیکون Tray با دسترسی سریع به گزینه‌ها  
@@ -76,7 +77,7 @@
 ## ⚙️ How It Works | نحوه عملکرد
 
 **English:**  
-- On launch, the embedded ZIP is extracted to `%TEMP%\xray_core`  
+- On launch, the embedded ZIP (Xray-core v25.12.8) is extracted to `%TEMP%\xray_core`  
 - The selected config is passed to `xray.exe` via `-config` argument  
 - Proxy settings are applied via registry:  
   - `ProxyEnable = 1`  
@@ -84,7 +85,7 @@
 - On exit: proxy disabled, Xray process killed, temporary files deleted  
 
 **فارسی:**  
-- هنگام اجرا، فایل ZIP داخلی در مسیر `%TEMP%\xray_core` استخراج می‌شود  
+- هنگام اجرا، فایل ZIP داخلی (Xray-core v25.12.8) در مسیر `%TEMP%\xray_core` استخراج می‌شود  
 - کانفیگ انتخاب‌شده با آرگومان `-config` به `xray.exe` داده می‌شود  
 - تنظیمات پروکسی از طریق رجیستری اعمال می‌شوند:  
   - `ProxyEnable = 1`  
@@ -95,12 +96,14 @@
 
 ## 🧠 Developer Notes | یادداشت‌های توسعه‌دهنده
 
+- Built on **.NET Framework 4.8**  
 - All logic is self-contained in `Form1.cs`  
 - No external batch files or shell scripts  
 - Uses `System.IO.Compression.ZipFile` for extraction  
 - Uses `System.Net.WebClient` to fetch public IP  
 - Uses `Microsoft.Win32.Registry` for proxy control  
 
+- ساخته‌شده بر پایه‌ی **.NET Framework 4.8**  
 - تمام منطق در فایل `Form1.cs` قرار دارد  
 - بدون نیاز به فایل‌های Batch یا اسکریپت خارجی  
 - استفاده از `System.IO.Compression.ZipFile` برای استخراج  
