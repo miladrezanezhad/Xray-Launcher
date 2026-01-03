@@ -3,6 +3,7 @@
 🎯 A lightweight Windows GUI launcher for [Xray-core](https://github.com/XTLS/Xray-core), designed for simplicity, autonomy, and full system integration — no external scripts, no dependencies.
 
 🎯 یک لانچر سبک برای ویندوز جهت اجرای [Xray-core](https://github.com/XTLS/Xray-core)، طراحی شده برای سادگی، استقلال کامل و یکپارچگی با سیستم — بدون اسکریپت‌های خارجی و بدون وابستگی.
+🎯 لانچر از اخرین نسخه  [Xray-core](https://github.com/XTLS/Xray-core) پشتیبانی میکنه 
 
 ---
 
